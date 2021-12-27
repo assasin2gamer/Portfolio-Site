@@ -1,0 +1,162 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+* {
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+html,
+body {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+.buttons {
+  display: table;
+  height: 100%;
+  width: 25%;
+}
+
+.container {
+  display: table-cell;
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+@media (min-width: 25px) {
+  h1.heading {
+    font-size: 1.75em;
+  }
+}
+@media (min-width: 760px) {
+  h1.heading {
+    font-size: 3.25em;
+  }
+}
+@media (min-width: 900px) {
+  h1.heading {
+    font-size: 4.25em;
+    margin: 0 0 0.5em;
+  }
+}
+
+.btnfos {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 160px;
+  margin: 0 auto 2em;
+  position: relative;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 25%;
+  overflow: hidden;
+}
+@media (min-width: 400px) {
+  .btnfos {
+    display: inline-block;
+    margin-right: 2.5em;
+    overflow: hidden;
+  }
+  .btnfos:nth-of-type(even) {
+    margin-right: 0;
+    overflow: hidden;
+  }
+}
+@media (min-width: 600px) {
+  .btnfos:nth-of-type(even) {
+    margin-right: 2.5em;
+    overflow: hidden;
+  }
+  .btnfos:nth-of-type(5) {
+    margin-right: 0;
+    overflow: hidden;
+  }
+}
+
+.btnfos-1 {
+  background: #ffffff;
+  font-weight: 100;
+  overflow: hidden;
+}
+.btnfos-1 svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  overflow: hidden;
+}
+.btnfos-1 rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1;
+  stroke-dasharray: 422, 0;
+  overflow: hidden;
+}
+
+.btnfos-1:hover {
+  background: rgba(225, 51, 45, 0);
+  letter-spacing: 1px;
+  overflow: hidden;
+  font-weight: 900;
+}
+.btnfos-1:hover rect {
+  stroke-width: 2;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  overflow: hidden;
+}
+
+.btnfos-2 {
+  letter-spacing: 0;
+}
+
+.btnfos-2:hover,
+.btnfos-2:active {
+  letter-spacing: 5px;
+}
+
+.btnfos-2:after,
+.btnfos-2:before {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 280ms ease-in-out;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.btnfos-2:hover:after,
+.btnfos-2:hover:before {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-color: #fff;
+  -webkit-transition: width 350ms ease-in-out;
+  transition: width 350ms ease-in-out;
+  width: 25%;
+}
+
+.btnfos-2:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 25%;
+}
