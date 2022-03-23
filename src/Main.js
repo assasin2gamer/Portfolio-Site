@@ -12,6 +12,7 @@ export default function Main() {
         <Typist styldelay={200} avgTypingDelay = {50}>
           <h1 style={{textAlign:'left', paddingLeft:'2%', color:'black'}}>
             This is a website coded from scratch using ReactJS
+            //add a navigation bar
           </h1>
         </Typist>
         </div>
